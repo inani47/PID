@@ -1,3 +1,19 @@
+Notes from discusion 9/26/2017:
+
+I had to add more class atributes to your class to sucessfully implement the compute function.
+I also modified the main.cpp file to test further the compute function.
+I left your old main.cpp file commeneted to make it easier for you to restore your old main.cpp
+
+ToDo:
+
+Add more test to increase your coverage.
+Add more comments to the code in your style for unity purposes
+and use cpplint.
+Change your UML Class Diagram to add the two new private class arributes  
+Turn in the assigment. 
+
+
+---------------------------------------------------------------------------------------------------------------------------------
 # PID
 [![Build Status](https://travis-ci.org/inani47/PID.svg?branch=master)](https://travis-ci.org/inani47/PID)
 [![Coverage Status](https://coveralls.io/repos/github/inani47/PID/badge.svg?branch=master)](https://coveralls.io/github/inani47/PID?branch=master)

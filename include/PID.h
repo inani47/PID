@@ -12,6 +12,9 @@
  * @param Ki is the integral gain
  * @param Kd is the derivative gain
  * @param dt is the time interval
+ * @param integral is the sum of all errors multiplied by dt
+ * @param previousError is the previous error from the previous
+ * time the compute method was called
  *
  * @author: Pranav Inani
  * @copyright 2017
@@ -26,5 +29,8 @@ class PID {
   PID(const double&, const double&, const double&, const double&);
   PID();
   double compute(double, double);
+ private:
+  double integral;
+  double previousError;
 };
 #endif

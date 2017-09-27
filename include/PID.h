@@ -32,4 +32,4 @@ class PID {
   PID();
   double compute(double, double);
 };
-#endif
+#endif  // INCLUDE_PID_H_

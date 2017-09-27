@@ -15,6 +15,10 @@ Turn in the assigment.
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # PID
+Implementation of a PID controller
+Uses Proportional, Integral and derivative gainsto find compute control variable which is added to the current velocity to achieve target velocity.
+The controller runs infinitely till EOF is encountered.
+
 [![Build Status](https://travis-ci.org/inani47/PID.svg?branch=master)](https://travis-ci.org/inani47/PID)
 [![Coverage Status](https://coveralls.io/repos/github/inani47/PID/badge.svg?branch=master)](https://coveralls.io/github/inani47/PID?branch=master)
 ---

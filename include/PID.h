@@ -23,13 +23,13 @@
 #ifndef INCLUDE_PID_H_
 #define INCLUDE_PID_H_
 class PID {
+ private:
   double Kp, Kd, Ki;
+  double integral;
+  double previousError;
  public:
   double dt;
   PID();
   double compute(double, double);
- private:
-  double integral;
-  double previousError;
 };
-#endif  // INCLUDE_PID_H_
+#endif

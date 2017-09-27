@@ -58,8 +58,7 @@ PID::PID() {
   Kp = .5;
   Kd = 0.1;
   Ki = 0.05;
-  dt = 0.4;  // should not be zero to avoid division by zero 
+  dt = 0.4;  // should not be zero to avoid division by zero
   integral = 0;
   previousError = 0;
-
 }

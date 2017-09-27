@@ -32,4 +32,4 @@ class PID {
   double integral;
   double previousError;
 };
-#endif
+#endif  // INCLUDE_PID_H_

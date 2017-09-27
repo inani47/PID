@@ -1,0 +1,11 @@
+ ../cpplint.py --extensions=h,hpp,cpp $( find . -name *.h -or -name *.hpp -or -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+./include/PID.h:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+Done processing ./include/PID.h
+./test/main.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+Done processing ./test/main.cpp
+Done processing ./test/PID_test.cpp
+./app/main.cpp:0:  No copyright message found.  You should have a line: "Copyright [year] <Copyright Owner>"  [legal/copyright] [5]
+Done processing ./app/main.cpp
+Done processing ./app/PID.cpp
+Total errors found: 3
+

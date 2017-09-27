@@ -15,7 +15,7 @@
  */
 
 TEST(computeTest, IF_SP_EQ_PV_RET_PV) {
-  PID p(1, 2, 3, 4);
+  PID p;
   EXPECT_EQ(23, p.compute(23, 23));
 }
 

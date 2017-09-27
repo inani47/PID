@@ -26,51 +26,39 @@
  */
 
 double PID::compute(double sp, double pv) {
-	auto error = sp -pv;
-	/**
-	 *This makes sure to stop computing if the actual velocity is at the target velocity
-	 */
-	if(error == 0) {
-		integral = 0;
-		previousError = 0;
-		return pv;
-	}
+  auto error = sp - pv;
+  /**
+   *This makes sure to stop computing if the actual velocity is at the target velocity
+   */
+  if (error == 0) {
+    integral = 0;
+    previousError = 0;
+    return pv;
+  }
 
-	integral = integral + error*dt;
-	/**
-	 *This caps the integral if it gets too large and unhelpful for the program
-	 */
-	if (integral > 40){
-		integral = 40;
-	}
-	
-	auto derivative = (error - previousError)/dt;
-	auto v = Kp*error + Ki*integral + Kd*derivative;
-	auto nv = pv+v;
-	return nv;
+  integral = integral + error * dt;
+  /**
+   *This caps the integral if it gets too large and unhelpful for the program
+   */
+  if (integral > 40) {
+    integral = 40;
+  }
+
+  auto derivative = (error - previousError) / dt;
+  auto v = Kp * error + Ki * integral + Kd * derivative;
+  auto nv = pv + v;
+  return nv;
 }
 
 /**
- * @brief constructor to take in values of Kp, Kd, Ki, dt, integral, previousError
- */
-PID::PID(const double& a, const double& b, const double& c, const double& d) {
-  Kp = a;
-  Kd = b;
-  Ki = c;
-  dt = d;
-  integral = 0;
-  previousError = 0;
-}
-
-/**
- * @brief overloaded constructor with default values of Kp, Kd, Ki, dt, integral, previousError
+ * @brief constructor with default values of Kp, Kd, Ki, dt, integral, previousError
  */
 
 PID::PID() {
   Kp = .5;
   Kd = 0.1;
   Ki = 0.05;
-  dt = 0.4; // should not be zero to pass test
+  dt = 0.4;  // should not be zero to pass test
   integral = 0;
   previousError = 0;
 

@@ -26,7 +26,6 @@ class PID {
   double Kp, Kd, Ki;
  public:
   double dt;
-  PID(const double&, const double&, const double&, const double&);
   PID();
   double compute(double, double);
  private:

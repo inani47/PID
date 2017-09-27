@@ -15,7 +15,7 @@ Turn in the assigment.
 
 ---------------------------------------------------------------------------------------------------------------------------------
 # PID
-Implementation of a PID controller
+Implementation of a PID controller.
 Uses Proportional, Integral and derivative gainsto find compute control variable which is added to the current velocity to achieve target velocity.
 The controller runs infinitely till EOF is encountered.
 
